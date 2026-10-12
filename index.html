@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SHOPERA - Your New Era of Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            SHOPERA
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#product-container">Products</a>
+            <a href="#why-shopera">About</a>
+            <a href="#footer-content">Contact</a>
+        </div>
+
+        <!-- Cart Button -->
+        <div class="cart" id="cart-button">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+        <button id="login-button">Login</button>
+
+    </nav>
+    <!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-small-text">WELCOME TO SHOPERA</p>
+
+        <h1>Your New Era of Shopping</h1>
+
+        <p class="hero-description">
+            Discover amazing products, Explore new styles, Shop Smarter Shop Better.
+        </p>
+
+        <button class="shop-button" onclick="document.getElementById('product-container').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+
+    </div>
+
+</section>
+<!-- Products Section -->
+<section class="products">
+    <div class="search-box">
+    <input 
+        type="text" 
+        id="search-input" 
+        placeholder="🔍Search products..."
+    >
+</div>
+
+<h2>Featured Products</h2>
+
+<div class="product-container" id="product-container">
+
+
+</div>
+        
+    </div>
+
+</section>
+<section class="cart-section">
+    <h2>Your Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Total: ₹<span id="cart-total">0</span></h3>
+</section>
+
+<section class="checkout-section">
+    <h2>Checkout</h2>
+
+    <input type="text" id="checkout-name" placeholder="Full Name">
+    <input type="text" id="checkout-address" placeholder="Delivery Address">
+    <input type="text" id="checkout-phone" placeholder="Phone Number">
+
+    <button id="checkout-button">Place Order</button>
+</section>
+<section id="order-confirmation">
+    <h2>🎉 Order Confirmed!</h2>
+    <p>Thank you for shopping with <br>SHOPERA.</p>
+    <p>Your order has been placed successfully.</p>
+</section>
+
+<!-- Why Shopera Section -->
+<section class="why-shopera" id="why-shopera">
+
+    <h2>Why Shopera?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Get your favorite products delivered to your doorstep.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure Shopping</h3>
+            <p>Your shopping experience is designed with security in mind.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">💳</div>
+            <h3>Easy Payments</h3>
+            <p>Enjoy a simple and convenient checkout experience.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-content" id="footer-content">
+
+        <div class="footer-brand">
+            <h2>SHOPERA</h2>
+            <p>Your New Era of Shopping.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#product-container">Products</a>
+            <a href="#why-shopera">About</a>
+            <a href="#footer-contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@shopera.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SHOPERA. All rights reserved.</p>
+    </div>
+
+</footer>
+     <div id="product-modal" class="product-modal">
+
+    <div class="modal-content">
+
+        <button id="close-modal" class="close-modal">✕</button>
+
+        <h2 id="modal-name">Product Name</h2>
+
+        <p id="modal-price">₹0</p>
+
+        <p id="modal-description">
+            Product description goes here.
+        </p>
+
+        <button id="modal-add-cart">
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+<div id="login-modal" class="login-modal">
+
+    <div class="login-box">
+
+        <button id="close-login">✕</button>
+
+        <h2>Welcome to SHOPERA</h2>
+
+        <input type="text" placeholder="Email">
+
+        <input type="password" placeholder="Password">
+
+        <button class="login-submit">Login</button>
+        <br><br>
+
+        <p>New to SHOPERA? <br><button id="register-button">Register</button></p>
+
+    </div>
+
+</div>
+<div id="register-modal" class="login-modal">
+    <div class="login-box">
+        <button id="close-register">✕</button>
+
+        <h2>Create Account</h2>
+
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button class="login-submit">Register</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
