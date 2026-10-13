@@ -23,7 +23,7 @@ function money(value) {
 }
 
 async function api(url, data) {
-    const response = await fetch("https://shopera-backend-g8rr.onrender.com" + url, {
+    const response = await fetch("https://shopera-backend-g8rr.onrender.com/api/products" + url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
