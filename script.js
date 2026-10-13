@@ -78,7 +78,7 @@ function displayProducts(list) {
 
 async function loadProducts() {
     try {
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch("https://shopera-backend-g8rr.onrender.com/api/products");
 
         if (!response.ok) throw new Error();
 
